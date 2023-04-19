@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif ;  
+    margin: 0px;
+    /* transition: background-color 0.56s ease-in-out; */
+}
+
+:root{
+    --bg-color: hsl(0, 0%, 6%);
+    --txt-color: hsl(0, 0%, 100%); 
+    --sub-txt-color: rgb(79, 77, 77); 
+}
+
+.dark-mode{
+    background-color: var(--bg-color);
+    color: var(--txt-color); 
+}
+
+.grey-txt{
+    color: var(--sub-txt-color); 
+}
+
+.vid-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px;
+}
+
+.thumbnail{
+    width: 100%;
+}
+.channel-pic{
+    width: 38px;
+    border-radius: 20px;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin-top: 10px;
+}
+.vid-title{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 3px;
+    height: 34px;
+    
+}
+.channel-name, .vid-stats{
+    font-size: small;
+    line-height: 6px;
+}
+.header{
+    display: flex;
+    height: 55px;
+    justify-content: space-between;
+}
+
+.left-section{
+    /* margin-left: 4px; */
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu{
+    height: 24px;
+    margin: 20px;
+}
+
+.dark-logo-div{
+    overflow: hidden;
+    margin: 18px;
+    margin-left: 10px;
+    /* This will ensure that the base container will retain its structure, and any image overflow will be hidden behind the container. */
+}
+
+.hamburger-menu-dark{
+    height: 30px;
+    width: 40px;
+    margin-left: 2px;
+    /* mar */
+    /* margin: 18px; */
+    /* object-fit:cover; */
+    /* object-position: 2px; */
+    /* transform: translate(0, 5%); */
+    border-radius: 38px;
+    display: none;
+}
+
+.youtube-logo{
+    height: 60px;
+    /* width: 66px; */
+    margin-left: 4px;
+}
+
+.youtube-logo-dark{
+    /* margin-top: px; */
+    height: 66px;
+    width: 110px;
+    margin-left: -2px;
+    display: none;
+    /* transition: opacity 100s; */
+}
+
+.mid-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    flex: 1;
+    height: 34px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+}
+
+.searchBtn{
+    height: 32px;
+    width: 50px;   
+    background-color: white;
+    /* border: 1px solid rgb(192, 192, 192); */
+    border-style: none;
+    border-radius: 25px;
+    margin-left: -52px;
+    cursor: pointer;
+}
+
+.search-icon{
+    height: 25px;
+    margin-top: 2px;
+}
+
+.voice-search-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 4px;
+}
+
+.voice-search-icon{
+    height: 24px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.right-section{
+    width: 200px;
+}
